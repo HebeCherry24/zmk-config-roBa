@@ -91,10 +91,10 @@
 
         LAYER_1 {
             bindings = <
-&kp ESC    &kp AMPS           &kp ASTRK  &kp LS(LC(F9))  &kp F7                              &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE         &kp EQUAL
-&kp TAB    &mt LEFT_ALT DLLR  &kp PRCNT  &kp LCTRL       &kp LS(LG(S))  &trans      &trans   &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT           &kp SEMICOLON
-&kp SLASH  &kp EXCL           &kp AT     &kp HASH        &kp ASTRK      &trans      &trans   &trans  &trans                &kp LESS_THAN          &kp GREATER_THAN  &kp BACKSLASH
-&trans     &trans             &trans     &trans          &trans         &trans      &kp DEL  &trans                                                                 &trans
+&kp ESC               &kp AMPS           &kp ASTRK  &kp LS(LC(F9))  &kp F7                              &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE         &kp EQUAL
+&kp TAB               &mt LEFT_ALT DLLR  &kp PRCNT  &kp LCTRL       &kp LS(LG(S))  &trans      &trans   &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT           &kp SEMICOLON
+&mt LEFT_SHIFT SLASH  &kp EXCL           &kp AT     &kp HASH        &kp ASTRK      &trans      &trans   &trans  &trans                &kp LESS_THAN          &kp GREATER_THAN  &kp BACKSLASH
+&trans                &trans             &trans     &trans          &trans         &trans      &kp DEL  &trans                                                                 &trans
             >;
         };
 
