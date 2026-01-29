@@ -32,26 +32,31 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+            timeout-ms = <20>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
+            timeout-ms = <20>;
         };
 
         muhennkann {
             bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
+            timeout-ms = <20>;
         };
 
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
+            timeout-ms = <20>;
         };
 
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+            timeout-ms = <20>;
         };
     };
 
@@ -81,7 +86,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                                                &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                   &kp G                   &kp LS(LG(S))               &kp C_VOLUME_UP  &kp H        &kp J  &kp K      &kp L    &lt_to_layer_0 5 MINUS
+&kp A             &kp S         &kp D         &kp F                   &kp G                   &kp LS(LG(S))               &kp C_VOLUME_UP  &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &lt 7 B                 &kp K_MUTE                  &kp C_VOL_DN     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANG2  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 6 LANG1      &kp BACKSPACE    &lt 3 ENTER                             &kp RIGHT_SHIFT
             >;
@@ -91,10 +96,10 @@
 
         LAYER_1 {
             bindings = <
-&kp ESC               &kp AMPS           &kp ASTRK  &kp LS(LC(F9))  &kp F7                              &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE         &kp EQUAL
-&kp TAB               &mt LEFT_ALT DLLR  &kp PRCNT  &kp LCTRL       &kp LS(LG(S))  &trans      &trans   &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT           &kp SEMICOLON
-&mt LEFT_SHIFT SLASH  &kp EXCL           &kp AT     &kp HASH        &kp ASTRK      &trans      &trans   &trans  &trans                &kp LESS_THAN          &kp GREATER_THAN  &kp BACKSLASH
-&trans                &trans             &trans     &trans          &trans         &trans      &kp DEL  &trans                                                                 &trans
+&kp ESC               &kp AMPS           &kp ASTRK  &kp LS(LC(F9))  &kp LA(LC(TAB))                       &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE         &kp EQUAL
+&kp TAB               &mt LEFT_ALT DLLR  &kp PRCNT  &kp LCTRL       &kp LS(LG(S))    &trans      &trans   &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT           &kp SEMICOLON
+&mt LEFT_SHIFT SLASH  &kp EXCL           &kp AT     &kp HASH        &kp ASTRK        &trans      &trans   &trans  &trans                &kp LESS_THAN          &kp GREATER_THAN  &kp BACKSLASH
+&trans                &trans             &trans     &trans          &trans           &trans      &kp DEL  &trans                                                                 &trans
             >;
         };
 
@@ -109,10 +114,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &trans  &trans  &trans  &trans                      &trans           &trans              &kp UP_ARROW    &trans               &trans
-&kp TAB         &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME         &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LC(TAB))  &kp LA(LEFT_ARROW)  &kp LA(TAB)     &kp LA(RIGHT_ARROW)  &trans
-&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                    &trans
+&kp ESCAPE      &trans  &trans  &trans  &trans                      &trans        &trans              &kp UP_ARROW     &trans               &trans
+&kp TAB         &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME      &kp LEFT_ARROW      &kp DOWN_ARROW   &kp RIGHT_ARROW      &kp END
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(HOME)  &kp LA(LEFT_ARROW)  &kp LA(LC(TAB))  &kp LA(RIGHT_ARROW)  &kp LS(END)
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
